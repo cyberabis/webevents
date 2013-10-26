@@ -21,10 +21,17 @@
 	<script src="collector.js"></script> 
 	<script>
 	$( document ).ready(function() {
-		//bind: event_type, event, src_object_id, reactor, data_obj_ids
+		
+		//event_reactor: event_name, event, src_object_id, reactor, data_obj_ids
+		//event_name: just a name for you to track
+		//event: should be a jQuery event like click, hover, submit etc.
+		//src_object_id: id of the html element to which we want to bind event listener. Should be in jQuery selector format like #input_box1
+		//reactor: this is the js function that will get event details. Use logging_reactor or write your own
+		//data_onj_ids: array of ids of the html element whose data needs to be recorder. The id should be in jQuery selector format.
     	event_reactor("page_submit", "click", "#submit", "logging_reactor", ["#fname", "#lname"]);
 	});
 	</script>
+
 </body>
 
 </html>
