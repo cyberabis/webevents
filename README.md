@@ -1,7 +1,7 @@
 webevents
 =========
 
-A JS utility to easily collect events from websites for metrics
+A flexible JS utility to easily collect events from websites for metrics
 
 Check the test.html for usage details. event_reactor is the the function that does the work.
 Make sure to add jQuery js files and collector.js.
