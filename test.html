@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Page</title>
+</head>
+
+<body>
+	<p>This is a paragraph</p>
+	<a href="http://www.w3schools.com">This is a link</a> <br><br>
+
+	<form id="form">
+		First name: <input type="text" name="firstname" id="fname"><br> 
+		Last name: <input type="text" name="lastname" id="lname"> <br>
+		<input type="radio" name="sex" value="male" id="s1">Male <br> 
+		<input type="radio" name="sex" value="female" id="s2">Female <br>
+		<input type="submit" value="Submit" id="submit">
+	</form>
+	
+	<script src="jquery-2.0.3.min.js"></script>
+	<script src="collector.js"></script> 
+	<script>
+	$( document ).ready(function() {
+		//bind: event_type, event, src_object_id, reactor, data_obj_ids
+    	event_reactor("page_submit", "click", "#submit", "logging_reactor", ["#fname", "#lname"]);
+	});
+	</script>
+</body>
+
+</html>
