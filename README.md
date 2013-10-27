@@ -1,7 +1,9 @@
 webevents
 =========
 
-A flexible JS utility to easily collect events from websites for metrics
+A flexible JS utility to easily collect events from websites for metrics.
+While google analytics always sends your events to google servers, this utility gives you flexibility to write your own event reactor.
+That said, you could use the built in ajax post reactor as well!
 
 Check the test.html for usage details. event_reactor is the the function that does the work.
 Make sure to add jQuery js files and collector.js.
